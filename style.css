@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hello {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+  background: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black 50px solid;
+}
