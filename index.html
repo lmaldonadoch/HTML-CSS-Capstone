@@ -4,36 +4,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Capstone Project</title>
   </head>
   <body>
-    <div class="hello">
-      Hello World!
-    </div>
+    <header class="header">
+      <div class="background_color">
+        <nav class="navbar flex__item black">
+          <a href="#" class="menu"><i class="fas fa-home"></i></a>
+          <a href="#" class="about_link">About</a>
+          <a href="#" class="tickets_link">Tickets</a>
+        </nav>
+
+        <div class="text">
+          <p class="md_header_text orange cocogoose_normal">
+            Your coding path starts here!
+          </p>
+          <p class="lg_header_text cocogoose_bold">
+            Complete HTML & CSS course
+          </p>
+          <div class="sm_header_text black cocogoose_normal">
+            <p>
+              A life-changing, comprehensive, and easy to follow program
+              designed by an eternal student for students. In this course, we
+              will cover all the basics of programming and teach since day one
+              the best tools to get you developing in no time. We will also
+              cover frameworks and CSS preprocessors all in a very immersive and
+              real-world case course.
+            </p>
+          </div>
+
+          <div class="date black cocogoose_bold">
+            Friday May first ~ Friday May twenty-ninth
+          </div>
+          <div class="location black cocogoose_normal">
+            Microverse Headquarters, Remote Office
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="program_details gray container">
+      <h2 class="title">
+        Program Details
+      </h2>
+      <hr class="orange_line" />
+
+      <div class="cards_container">
+        <div class="card">
+          <span class="material-icons">
+            class
+          </span>
+          <div class="card_title orange">
+            Lectures
+          </div>
+          <div class="card_text">
+            Study the given material provided by the lecturers to complete the
+            real-life projects. All the information provided is to be used as a
+            guide for the student to develop the self-learning and
+            resourcefulness required by the industry.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="material-icons">
+            important_devices
+          </div>
+          <div class="card_title orange">
+            Remote
+          </div>
+          <div class="card_text">
+            Technology has helped us reach every corner of the world. We are a
+            completely remote school on purpose. Our objective is to be able to
+            teach people how to work remotely without any direct supervision.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="material-icons">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <div class="card_title orange">
+            Coding Partners
+          </div>
+          <div class="card_text">
+            To be able to compete in a very demanding industry, we teach our
+            alumnae to work collaboratively throughout the course. We teach them
+            how to team up, and specifically for the job, how to remotely, work
+            on the same project at the same time.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="material-icons">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="card_title orange">
+            Code Review
+          </div>
+          <div class="card_text">
+            A learning process is not complete without an evaluation to asses
+            the quality of the work as it has to meet high standards. We will
+            provide personalized reviews and feedback on all the work each
+            student completes.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="material-icons">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="card_title orange">
+            Completion Diploma
+          </div>
+          <div class="card_text">
+            Our success speaks for itself. Our graduates have put our school
+            name as a highly professional and complete program within Technology
+            Companies. Upon graduation, every student receives a diploma as
+            proof of completion.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="staff">
+      <h2 class="title">
+        Our staff
+      </h2>
+
+      <hr class="orange_line" />
+
+      <div class="staff_grid black">
+        <div class="staff_card">
+          <div class="staff_personal">
+            <div class="staff_image"></div>
+            <div class="staff_name">Luis Angel Maldonado</div>
+          </div>
+          <div class="staff_cv orange">Fullstack Web Developer</div>
+          <hr class="black_line" />
+          <div class="role">
+            Creator of the program. Overviews the operation and builds
+            relationships with potential employers to effectively position
+            students within world-class companies.
+          </div>
+        </div>
+
+        <div class="staff_card">
+          <div class="staff_image"></div>
+          <div class="staff_name">Sheldon Cooper</div>
+          <div class="staff_cv orange">Ph.D., Sc.D. Theoretical Physicist</div>
+          <hr class="black_line" />
+          <div class="role">
+            Develops and overviews the real-world projects to meet the industry
+            standards and provide students with a jump start when arriving at
+            their first job..
+          </div>
+        </div>
+
+        <div class="staff_card">
+          <div class="staff_image"></div>
+          <div class="staff_name">Amy Farrah Fowler</div>
+          <div class="staff_cv orange">Ph.D. Neurobiology</div>
+          <hr class="black_line" />
+          <div class="role">
+            Overviews the student's collaborative engagement in the program. She
+            developed collaborative training and provides students with support
+            when needed.
+          </div>
+        </div>
+
+        <div class="staff_card">
+          <div class="staff_image"></div>
+          <div class="staff_name">Raj Koothrappali</div>
+          <div class="staff_cv orange">Ph.D. Astronomy</div>
+          <hr class="black_line" />
+          <div class="role">
+            Promotes social interaction and partnership between students. He
+            developed the Social Skills program that enriches the overall
+            course. He provides motivational and psychological counseling.
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
