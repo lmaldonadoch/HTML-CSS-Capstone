@@ -10,6 +10,7 @@
 body {
   font-family: "Lato", sans-serif;
   background: #272a31;
+  max-width: 100%;
 }
 
 a {
@@ -88,7 +89,8 @@ nav {
   font-size: 30px;
   display: flex;
   padding: 20px 30px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   justify-content: space-around;
 }
 
@@ -129,6 +131,7 @@ header nav a:hover {
   border: #d3d3d3 2px solid;
   margin-bottom: 20px;
   line-height: 19px;
+  width: 100%;
 }
 
 .date {
@@ -266,4 +269,103 @@ i,
 
 .black_line {
   border: #272a31 solid 1px;
+}
+
+.companies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-top: rgba(39, 42, 49, 0.2) 1px solid;
+}
+
+.logos {
+  width: 100%;
+  padding: 30px;
+}
+
+.top_line,
+.bottom_line {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_line {
+  margin-top: 40px;
+}
+
+.companies img {
+  width: 30vw;
+  max-width: 150px;
+  height: auto;
+}
+
+.companies .large_image {
+  max-width: 75px;
+}
+
+footer {
+  background: #d3d3d3;
+  padding: 20px;
+}
+
+.social {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.disclaimers {
+  font-size: 10px;
+}
+
+@media (max-width: 500px) {
+  .navbar_container {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar_container a,
+  .navbar_container i {
+    font-size: 20px;
+  }
+
+  .cards_container .card_text {
+    width: 360px;
+    padding: 20px;
+  }
+
+  .staff_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff_card {
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    min-width: 360px;
+    max-width: 360px;
+  }
+
+  .staff_image img {
+    height: 150px;
+    width: 100% !important;
+    background-position: top;
+  }
+}
+
+@media (max-width: 680px) {
+  .text {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
 }
