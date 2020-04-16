@@ -54,12 +54,19 @@ a {
   padding: 30px 10px;
 }
 
+hr {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
 header {
   background: #000
     url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
     center center no-repeat;
   height: auto;
   min-height: 500px;
+  margin-top: -50px;
+  padding-top: 85px;
 }
 
 .background_color {
@@ -68,7 +75,16 @@ header {
   background: rgba(211, 211, 211, 0.9);
 }
 
-header nav {
+nav {
+  border-bottom: rgba(39, 42, 49, 0.1) solid 2px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(211, 211, 211, 0.9);
+}
+
+.navbar_container {
   font-size: 30px;
   display: flex;
   padding: 20px 30px;
@@ -139,8 +155,6 @@ header nav a:hover {
 
 .orange_line {
   border: #ec5242 solid 2px;
-  width: 100px;
-  margin-bottom: 15px;
 }
 
 .cards_container {
@@ -186,6 +200,70 @@ i,
 .staff_grid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(auto, 350px));
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 700px));
+  grid-gap: 35px;
+  justify-content: center;
+}
+
+.staff_card {
+  display: flex;
+}
+
+.staff_personal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.luis .staff_image {
+  background: #fff url(images/face.jpg) center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.sheldon .staff_image {
+  background: #fff
+    url(https://static.mujerhoy.com/noticias/201807/30/media/cortadas/jim_parsons_sheldon_cooper-kPoC-U60480611142MKI-644x483@MujerHoy.jpg)
+    center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.amy .staff_image {
+  background: #fff
+    url(https://i.pinimg.com/originals/c6/af/0d/c6af0dac73fac7eead3b893d2d7caa05.jpg)
+    center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.raj .staff_image {
+  background: #fff
+    url(http://images4.fanpop.com/image/photos/15200000/Kunal-Nayyar-aka-Raj-raj-koothrappali-15235341-319-480.jpg)
+    center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.staff_name {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.staff_cv {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.black_line {
+  border: #272a31 solid 1px;
 }
