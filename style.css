@@ -99,9 +99,8 @@ header nav a:hover {
 }
 
 .text {
-  width: 100%;
+  width: 90%;
   max-width: 700px;
-  padding: 30px;
   margin: 40px 0 0 40px;
 }
 
@@ -339,7 +338,7 @@ footer {
 
   header .text {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
     max-width: 97%;
@@ -369,6 +368,11 @@ footer {
     font-size: 13px;
   }
 
+  .staff {
+    padding: 10px;
+    margin: auto 0;
+  }
+
   .staff_grid {
     grid-template-columns: 1fr;
   }
@@ -376,9 +380,9 @@ footer {
   .staff_card {
     flex-direction: column;
     align-items: center;
-    width: 360px;
-    min-width: 360px;
-    max-width: 360px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .staff_image img {
@@ -397,7 +401,7 @@ footer {
     margin: 10px;
     justify-content: space-between;
     align-items: space-between !important;
-    max-width: 100%;
+    max-width: 97%;
   }
 
   .cards_container {
