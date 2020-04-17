@@ -35,6 +35,10 @@ a {
   font-family: cocogoose_bold, Arial, Helvetica, sans-serif;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .black,
 a {
   color: #272a31;
@@ -570,7 +574,12 @@ body .header_tickets {
 
   .tickets {
     padding: 20px 0;
-    font-size: 13px;
+    max-width: 95%;
+  }
+
+  .tickets .title,
+  .tickets .price {
+    font-size: 12px;
   }
 
   .seat_container {
