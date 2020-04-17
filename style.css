@@ -335,6 +335,7 @@ footer {
 header .text_about {
   text-align: center;
   padding-bottom: 50px;
+  margin: 40px auto;
 }
 
 .lg_header_text_about {
@@ -344,7 +345,27 @@ header .text_about {
 
 .sm_header_text_about {
   background: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 25px;
 }
+
+.testimonials {
+  background: none;
+}
+
+.testimonial_grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 35px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+}
+
+/* .testimonial_card {
+  max-width: 500px;
+  min-width: 300px;
+  width: 50%;
+} */
 
 /* About page styling */
 
@@ -376,6 +397,10 @@ header .text_about {
   .lg_header_text,
   .date {
     font-size: 50px;
+  }
+
+  .date {
+    font-size: 30px;
   }
 
   .sm_header_text {
