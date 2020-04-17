@@ -29,11 +29,11 @@ a {
 }
 
 .cocogoose_normal {
-  font-family: cocogoose_normal;
+  font-family: cocogoose_normal, Arial, Helvetica, sans-serif;
 }
 
 .cocogoose_bold {
-  font-family: cocogoose_bold;
+  font-family: cocogoose_bold, Arial, Helvetica, sans-serif;
 }
 
 .black {
@@ -61,9 +61,7 @@ hr {
 }
 
 header {
-  background: #000
-    url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
-    center center no-repeat;
+  background: #000 url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center center no-repeat;
   height: auto;
   min-height: 500px;
   margin-top: -50px;
@@ -117,13 +115,7 @@ header nav a:active {
 .lg_header_text {
   font-size: 60px;
   background: rgb(245, 77, 3);
-  background: linear-gradient(
-    90deg,
-    rgba(236, 82, 66, 1) 0%,
-    rgba(39, 42, 49, 1) 45%,
-    rgb(233, 195, 26) 60%,
-    rgba(236, 82, 66, 1) 70%
-  );
+  background: linear-gradient( 90deg, rgba(236, 82, 66, 1) 0%, rgba(39, 42, 49, 1) 45%, rgb(233, 195, 26) 60%, rgba(236, 82, 66, 1) 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 65px;
@@ -236,9 +228,7 @@ i,
 }
 
 .sheldon .staff_image {
-  background: #fff
-    url(https://static.mujerhoy.com/noticias/201807/30/media/cortadas/jim_parsons_sheldon_cooper-kPoC-U60480611142MKI-644x483@MujerHoy.jpg)
-    center center no-repeat;
+  background: #fff url(https://static.mujerhoy.com/noticias/201807/30/media/cortadas/jim_parsons_sheldon_cooper-kPoC-U60480611142MKI-644x483@MujerHoy.jpg) center center no-repeat;
   background-size: cover;
   width: 30%;
   min-width: 120px;
@@ -246,9 +236,7 @@ i,
 }
 
 .amy .staff_image {
-  background: #fff
-    url(https://i.pinimg.com/originals/c6/af/0d/c6af0dac73fac7eead3b893d2d7caa05.jpg)
-    center center no-repeat;
+  background: #fff url(https://i.pinimg.com/originals/c6/af/0d/c6af0dac73fac7eead3b893d2d7caa05.jpg) center center no-repeat;
   background-size: cover;
   width: 30%;
   min-width: 120px;
@@ -256,9 +244,7 @@ i,
 }
 
 .raj .staff_image {
-  background: #fff
-    url(http://images4.fanpop.com/image/photos/15200000/Kunal-Nayyar-aka-Raj-raj-koothrappali-15235341-319-480.jpg)
-    center center no-repeat;
+  background: #fff url(http://images4.fanpop.com/image/photos/15200000/Kunal-Nayyar-aka-Raj-raj-koothrappali-15235341-319-480.jpg) center center no-repeat;
   background-size: cover;
   width: 30%;
   min-width: 120px;
@@ -361,6 +347,7 @@ header .text_about {
 .lg_header_text_about {
   font-size: 40px;
   margin: 20px 0;
+  background: none;
 }
 
 .sm_header_text_about {
@@ -381,10 +368,6 @@ header .text_about {
   grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
 }
 
-.lg_header_text_about {
-  background: none;
-}
-
 .sm_header_text_tickets {
   background: rgba(39, 42, 49, 0.7);
 }
@@ -401,30 +384,7 @@ body .header_tickets {
   max-width: 800px;
   margin: 30px auto;
   border: 3px solid;
-  border-image: linear-gradient(
-      45deg,
-      #d3d3d3 5%,
-      #ec5242 10%,
-      #272a31 15%,
-      #d3d3d3 20%,
-      #ec5242 25%,
-      #272a31 30%,
-      #d3d3d3 35%,
-      #ec5242 40%,
-      #272a31 45%,
-      #d3d3d3 50%,
-      #ec5242 55%,
-      #272a31 60%,
-      #d3d3d3 65%,
-      #ec5242 70%,
-      #272a31 75%,
-      #d3d3d3 80%,
-      #ec5242 85%,
-      #272a31 90%,
-      #d3d3d3 95%,
-      #ec5242 100%
-    )
-    3;
+  border-image: linear-gradient(45deg, #d3d3d3 5%, #ec5242 10%, #272a31 15%, #d3d3d3 20%, #ec5242 25%, #272a31 30%, #d3d3d3 35%, #ec5242 40%, #272a31 45%, #d3d3d3 50%, #ec5242 55%, #272a31 60%, #d3d3d3 65%, #ec5242 70%, #272a31 75%, #d3d3d3 80%, #ec5242 85%, #272a31 90%, #d3d3d3 95%, #ec5242 100%) 3;
   padding: 20px;
   grid-gap: 15px;
 }
