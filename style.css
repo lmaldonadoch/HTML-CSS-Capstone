@@ -352,8 +352,6 @@ footer {
   font-size: 10px;
 }
 
-/* About page styling */
-
 header .text_about {
   text-align: center;
   padding-bottom: 50px;
@@ -386,10 +384,6 @@ header .text_about {
 .lg_header_text_about {
   background: none;
 }
-
-/* About page styling end*/
-
-/* Tickets Styling */
 
 .sm_header_text_tickets {
   background: rgba(39, 42, 49, 0.7);
@@ -533,8 +527,6 @@ body .header_tickets {
   opacity: 1;
 }
 
-/* Tickets Styling end*/
-
 @media (max-width: 500px) {
   .navbar_container {
     max-width: 360px;
@@ -615,7 +607,7 @@ body .header_tickets {
     font-size: 13px;
   }
 
-  .seat_container{
+  .seat_container {
     width: 330px;
   }
 
@@ -674,22 +666,23 @@ body .header_tickets {
     width: auto;
     margin: 20px;
   }
+}
 
-  @media (min-width: 1500px) {
-    .header_images {
-      display: flex;
-      position: absolute;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 500px;
-      justify-content: space-evenly;
-      top: 100px;
-      right: 10%;
-    }
-  
-    .header_images img {
-      height: 150px;
-      width: auto;
-      margin: 20px;
-    }
+@media (min-width: 1500px) {
+  .header_images {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    top: 100px;
+    right: 10%;
+  }
+
+  .header_images img {
+    height: 150px;
+    width: auto;
+    margin: 20px;
+  }
 }
