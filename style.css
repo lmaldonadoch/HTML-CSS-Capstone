@@ -147,6 +147,10 @@ header nav a:active {
   font-size: 16px;
 }
 
+.header_images {
+  display: none;
+}
+
 .program_details {
   display: flex;
   flex-direction: column;
@@ -305,13 +309,9 @@ i,
 }
 
 .companies img {
-  width: 30vw;
-  max-width: 150px;
-  height: auto;
-}
-
-.companies .large_image {
-  max-width: 75px;
+  height: 10vw;
+  max-height: 150px;
+  width: auto;
 }
 
 footer {
@@ -324,6 +324,28 @@ footer {
   width: 250px;
   justify-content: space-between;
   margin: 25px 0;
+}
+
+.social i {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.social .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.social .fa-twitter:hover {
+  color: #00acee;
+}
+
+.social .fa-linkedin-in:hover {
+  color: #0e76a8;
+}
+
+.social .fa-github:hover {
+  color: #fff;
 }
 
 .disclaimers {
@@ -361,17 +383,157 @@ header .text_about {
   grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
 }
 
-/* .testimonial_card {
-  max-width: 500px;
-  min-width: 300px;
-  width: 50%;
-} */
-
-/* About page styling */
-
 .lg_header_text_about {
   background: none;
 }
+
+/* About page styling end*/
+
+/* Tickets Styling */
+
+.sm_header_text_tickets {
+  background: rgba(39, 42, 49, 0.7);
+}
+
+body .header_tickets {
+  height: 200px;
+  padding-bottom: 35px;
+}
+
+.tickets {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  border: 3px solid;
+  border-image: linear-gradient(
+      45deg,
+      #d3d3d3 5%,
+      #ec5242 10%,
+      #272a31 15%,
+      #d3d3d3 20%,
+      #ec5242 25%,
+      #272a31 30%,
+      #d3d3d3 35%,
+      #ec5242 40%,
+      #272a31 45%,
+      #d3d3d3 50%,
+      #ec5242 55%,
+      #272a31 60%,
+      #d3d3d3 65%,
+      #ec5242 70%,
+      #272a31 75%,
+      #d3d3d3 80%,
+      #ec5242 85%,
+      #272a31 90%,
+      #d3d3d3 95%,
+      #ec5242 100%
+    )
+    3;
+  padding: 20px;
+  grid-gap: 15px;
+}
+
+.tickets > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  height: 100%;
+  padding: 10px;
+}
+
+.tickets > div > input {
+  margin: 10px auto 0;
+}
+
+.seats {
+  background: #d3d3d3;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.seats .orange_line {
+  margin: 5px auto 10px;
+}
+
+.seat_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 100%;
+  max-width: 800px;
+  grid-column-gap: 10px;
+  grid-row-gap: 50px;
+  margin: 30px auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.seat {
+  height: 1px;
+  width: 1px;
+  background: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  border: none;
+}
+
+.seat:focus {
+  color: #ec5242;
+}
+
+.seat:hover {
+  color: rgba(236, 82, 66, 0.5);
+  cursor: pointer;
+}
+
+.proceed_button {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proceed {
+  height: 100px;
+  width: 100%;
+  max-width: 300px;
+  background: #ec5242;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.proceed span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.proceed span::after {
+  content: "»";
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.proceed:hover span {
+  padding-right: 30px;
+}
+
+.proceed:hover span::after {
+  right: 0;
+  opacity: 1;
+}
+
+/* Tickets Styling end*/
 
 @media (max-width: 500px) {
   .navbar_container {
@@ -447,6 +609,19 @@ header .text_about {
   .staff_personal {
     margin-top: 15px;
   }
+
+  .tickets {
+    padding: 20px 0;
+    font-size: 13px;
+  }
+
+  .seat_container{
+    width: 330px;
+  }
+
+  .seat_container i {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -480,4 +655,41 @@ header .text_about {
     margin: 15px;
     justify-content: flex-start;
   }
+}
+
+@media (min-width: 1200px) {
+  .header_images {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    top: 100px;
+    right: 50px;
+  }
+
+  .header_images img {
+    height: 150px;
+    width: auto;
+    margin: 20px;
+  }
+
+  @media (min-width: 1500px) {
+    .header_images {
+      display: flex;
+      position: absolute;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 500px;
+      justify-content: space-evenly;
+      top: 100px;
+      right: 10%;
+    }
+  
+    .header_images img {
+      height: 150px;
+      width: auto;
+      margin: 20px;
+    }
 }
