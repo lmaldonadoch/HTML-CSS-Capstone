@@ -70,6 +70,7 @@ header {
   min-height: 500px;
   margin-top: -50px;
   padding-top: 85px;
+  padding
 }
 
 .background_color,
@@ -80,6 +81,7 @@ nav {
 .background_color {
   height: 100%;
   width: 100%;
+  padding-bottom: 80px;
 }
 
 nav {
