@@ -98,10 +98,16 @@ header nav a:hover {
   color: #ec5242;
 }
 
+header nav a:active {
+  border: #ec5242 2px solid;
+  color: #ec5242;
+}
+
 .text {
   width: 90%;
   max-width: 700px;
   margin: 40px 0 0 40px;
+  padding-top: 30px;
 }
 
 .md_header_text {
@@ -322,6 +328,28 @@ footer {
 
 .disclaimers {
   font-size: 10px;
+}
+
+/* About page styling */
+
+header .text_about {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.lg_header_text_about {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.sm_header_text_about {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* About page styling */
+
+.lg_header_text_about {
+  background: none;
 }
 
 @media (max-width: 500px) {
