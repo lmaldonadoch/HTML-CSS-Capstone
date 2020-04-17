@@ -1,6 +1,6 @@
-# HTML & CSS Capstone Project!
+# HTML & CSS Capstone Project! An Original Website
 
-> In this project, I worked on making a whole website using...
+> In this project, I used all the knowledge acquired throughout the HTML & CSS section. I used background images, gradients, flexbox, grids, input tags, links, anchor tags, semantic HTML, transitions, media queries, the Sass preprocessor, amongst many other tools I learned during this section of the main curriculum.
 
 ![screenshot](images/screenshot1.png)
 
@@ -8,11 +8,11 @@
 
 ![screenshot](images/screenshot3.png)
 
-This is an original website...
+I created a unique website using all the tools learned during the HTML & CSS section. It is fully responsive, from the smallest smartphone to a large widescreen. The topic I chose for my project is about a course much like the one Microverse offers since I honestly believe is the best one out there.
 
 ## Live version
 
-[Live Version](https://rawcdn.githack.com/lmaldonadoch/newsweek-clone/4e85f556ba2db214cec62c5506e1583c009cd477/index.html)
+[Live Version](https://rawcdn.githack.com/lmaldonadoch/HTML-CSS-Capstone/fce0e7ee700254260c55c2e647ef92fba5bd372f/about.html)
 
 ## Built With
 
@@ -21,6 +21,8 @@ This is an original website...
 - CSS
 - Google fonts
 - Font Awesome
+- Sass
+- [Cyndy's Shin design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## Getting Started
 
@@ -46,7 +48,7 @@ $ git clone git@github.com:lmaldonadoch/HTML-CSS-Capstone.git
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Jmagero/smashing-magazine/issues).
+Feel free to check the [issues page](https://github.com/lmaldonadoch/HTML-CSS-Capstone/issues).
 
 ## Show your support
 
@@ -54,4 +56,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Project inspired by Microverse Program
+- Project inspired by Microverse Program.
+- The layout, colors and inspiration was taken from a design by Cindy Shin. The original design elements and guide can be fount at [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) website.
+- On this website, there is mention of fictional characters, rights are property of
+  CBS® and do not hold any relationship with the project. The use of the
+  names and images is solely for educational purposes.
