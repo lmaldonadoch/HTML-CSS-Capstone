@@ -630,6 +630,10 @@ body .header_tickets {
     margin: 15px;
     justify-content: flex-start;
   }
+
+  .tickets > div {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
