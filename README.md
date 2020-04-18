@@ -12,7 +12,7 @@ I created a unique website using all the tools learned during the HTML & CSS sec
 
 ## Live version
 
-[Live Version](https://rawcdn.githack.com/lmaldonadoch/HTML-CSS-Capstone/6e6acd98fb46c36c52aad372001b5df85f57c1af/index.html)
+[Live Version](https://rawcdn.githack.com/lmaldonadoch/HTML-CSS-Capstone/998db4376c8aaebbb42587b026b43b38c7f9e6cc/index.html)
 
 ## Built With
 
