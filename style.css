@@ -1,0 +1,686 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #272a31;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: cocogoose_normal;
+  src: url(fonts/Cocogoose_Pro_Light-trial.ttf);
+}
+
+@font-face {
+  font-family: cocogoose_bold;
+  src: url(fonts/Cocogoose_Pro-trial.ttf);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.cocogoose_normal {
+  font-family: cocogoose_normal, Arial, Helvetica, sans-serif;
+}
+
+.cocogoose_bold {
+  font-family: cocogoose_bold, Arial, Helvetica, sans-serif;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.black,
+a {
+  color: #272a31;
+}
+
+.orange {
+  color: #ec5242;
+}
+
+.gray {
+  color: #d3d3d3;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 30px 10px;
+}
+
+hr {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+header {
+  background: #000 url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center center no-repeat;
+  height: auto;
+  min-height: 500px;
+  margin-top: -50px;
+  padding-top: 85px;
+}
+
+.background_color,
+nav {
+  background: rgba(211, 211, 211, 0.9);
+}
+
+.background_color {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+nav {
+  border-bottom: rgba(39, 42, 49, 0.1) solid 2px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar_container {
+  font-size: 30px;
+  display: flex;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-around;
+}
+
+header nav a:hover {
+  color: #ec5242;
+}
+
+header nav a:active {
+  border: #ec5242 2px solid;
+  color: #ec5242;
+}
+
+.text {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px 0 0 40px;
+  padding-top: 30px;
+}
+
+.md_header_text {
+  font-size: 26px;
+}
+
+.lg_header_text {
+  font-size: 60px;
+  background: rgb(245, 77, 3);
+  background: linear-gradient(90deg, rgba(236, 82, 66, 1) 0%, rgba(39, 42, 49, 1) 45%, rgb(233, 195, 26) 60%, rgba(236, 82, 66, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 65px;
+  padding: 15px 0;
+}
+
+.sm_header_text {
+  font-size: 13px;
+  padding: 15px;
+  border: #d3d3d3 2px solid;
+  margin-bottom: 20px;
+  line-height: 19px;
+  width: 100%;
+}
+
+.date {
+  font-size: 40px;
+}
+
+.header_images {
+  display: none;
+}
+
+.program_details {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.orange_line {
+  border: #ec5242 solid 2px;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(211, 211, 211, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(211, 211, 211, 0.5);
+  top: -4;
+}
+
+.card_title {
+  text-align: center;
+  padding: 0 10px;
+}
+
+i,
+.material-icons {
+  font-size: 36px;
+}
+
+.card_text {
+  width: 60%;
+  min-width: 60%;
+  max-width: 60%;
+}
+
+.staff,
+.seats,
+footer {
+  background: #d3d3d3;
+}
+
+.staff {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.staff_grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 700px));
+  grid-gap: 35px;
+  justify-content: center;
+}
+
+.staff_card {
+  display: flex;
+}
+
+.staff_personal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.luis .staff_image {
+  background: #fff url(images/face.jpg) center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.sheldon .staff_image {
+  background: #fff url(https://static.mujerhoy.com/noticias/201807/30/media/cortadas/jim_parsons_sheldon_cooper-kPoC-U60480611142MKI-644x483@MujerHoy.jpg) center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.amy .staff_image {
+  background: #fff url(https://i.pinimg.com/originals/c6/af/0d/c6af0dac73fac7eead3b893d2d7caa05.jpg) center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.raj .staff_image {
+  background: #fff url(http://images4.fanpop.com/image/photos/15200000/Kunal-Nayyar-aka-Raj-raj-koothrappali-15235341-319-480.jpg) center center no-repeat;
+  background-size: cover;
+  width: 30%;
+  min-width: 120px;
+  height: 150px;
+}
+
+.staff_name {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.staff_cv {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.black_line {
+  border: #272a31 solid 1px;
+}
+
+.companies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-top: rgba(39, 42, 49, 0.2) 1px solid;
+}
+
+.companies .title {
+  text-align: center;
+}
+
+.logos {
+  width: 100%;
+  padding: 30px;
+}
+
+.top_line,
+.bottom_line {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_line {
+  margin-top: 40px;
+}
+
+.companies img {
+  height: 10vw;
+  max-height: 150px;
+  width: auto;
+}
+
+footer {
+  padding: 20px;
+}
+
+.social {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.social i {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.social .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.social .fa-twitter:hover {
+  color: #00acee;
+}
+
+.social .fa-linkedin-in:hover {
+  color: #0e76a8;
+}
+
+.social .fa-github:hover {
+  color: #fff;
+}
+
+.disclaimers {
+  font-size: 10px;
+}
+
+header .text_about {
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 40px auto;
+}
+
+.lg_header_text_about {
+  font-size: 40px;
+  margin: 20px 0;
+  background: none;
+}
+
+.sm_header_text_about {
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 25px;
+}
+
+.testimonials {
+  background: none;
+}
+
+.testimonial_grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 35px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+}
+
+.sm_header_text_tickets {
+  background: rgba(39, 42, 49, 0.7);
+}
+
+body .header_tickets {
+  height: 200px;
+  padding-bottom: 35px;
+}
+
+.tickets {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #d3d3d3 5%, #ec5242 10%, #272a31 15%, #d3d3d3 20%, #ec5242 25%, #272a31 30%, #d3d3d3 35%, #ec5242 40%, #272a31 45%, #d3d3d3 50%, #ec5242 55%, #272a31 60%, #d3d3d3 65%, #ec5242 70%, #272a31 75%, #d3d3d3 80%, #ec5242 85%, #272a31 90%, #d3d3d3 95%, #ec5242 100%) 3;
+  padding: 20px;
+  grid-gap: 15px;
+}
+
+.tickets > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.tickets > div > input {
+  margin: 10px auto 0;
+}
+
+.seats {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.seats .orange_line {
+  margin: 5px auto 10px;
+}
+
+.seat_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 100%;
+  max-width: 800px;
+  grid-column-gap: 10px;
+  grid-row-gap: 50px;
+  margin: 30px auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.seat {
+  height: 1px;
+  width: 1px;
+  background: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  border: none;
+}
+
+.seat:focus {
+  color: #ec5242;
+}
+
+.seat:hover {
+  color: rgba(236, 82, 66, 0.5);
+  cursor: pointer;
+}
+
+.proceed_button {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proceed {
+  height: 100px;
+  width: 100%;
+  max-width: 300px;
+  background: #ec5242;
+  border: none;
+  cursor: pointer;
+}
+
+.proceed span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.proceed span::after {
+  content: "»";
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.proceed:hover span {
+  padding-right: 30px;
+}
+
+.proceed:hover span::after {
+  right: 0;
+  opacity: 1;
+}
+
+.card_title,
+.staff_cv,
+.proceed {
+  font-size: 20px;
+}
+
+.location,
+.program_details,
+.sm_header_text_about,
+.tickets > div {
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .navbar_container {
+    max-width: 360px;
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  .navbar_container a,
+  .navbar_container i {
+    font-size: 20px;
+  }
+
+  header .text {
+    padding-left: 0;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 97%;
+    width: 100%;
+  }
+
+  .lg_header_text,
+  .date {
+    font-size: 50px;
+  }
+
+  .date {
+    font-size: 30px;
+  }
+
+  .sm_header_text {
+    padding-right: 10px;
+    max-width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards_container .card_text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .staff {
+    padding: 10px;
+    margin: auto 0;
+  }
+
+  .staff_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff_card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .staff_image img {
+    height: 150px;
+    width: 100% !important;
+    background-position: top;
+  }
+
+  .staff_personal {
+    margin-top: 15px;
+  }
+
+  .tickets {
+    padding: 20px 0;
+    max-width: 95%;
+  }
+
+  .tickets .title,
+  .tickets .price {
+    font-size: 12px;
+  }
+
+  .seat_container {
+    width: 330px;
+  }
+
+  .seat_container i {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .program_details {
+    margin: 10px;
+    justify-content: space-between;
+    align-items: space-between !important;
+    max-width: 97%;
+  }
+
+  .cards_container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cards_container .card_text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 300px;
+    margin: 15px;
+    justify-content: flex-start;
+  }
+
+  .tickets > div {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_images {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    top: 100px;
+    right: 50px;
+  }
+
+  .header_images img {
+    height: 150px;
+    width: auto;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header_images {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    top: 100px;
+    right: 10%;
+  }
+
+  .header_images img {
+    height: 150px;
+    width: auto;
+    margin: 20px;
+  }
+
+  .cards_container {
+    flex-wrap: nowrap;
+  }
+}
