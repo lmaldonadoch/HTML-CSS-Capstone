@@ -27,6 +27,10 @@ a {
   src: url(fonts/Cocogoose_Pro-trial.ttf);
 }
 
+h1 {
+  font-weight: 400;
+}
+
 .cocogoose_normal {
   font-family: cocogoose_normal, Arial, Helvetica, sans-serif;
 }
@@ -144,10 +148,6 @@ header nav a:active {
   font-size: 40px;
 }
 
-.location {
-  font-size: 16px;
-}
-
 .header_images {
   display: none;
 }
@@ -155,7 +155,6 @@ header nav a:active {
 .program_details {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -191,7 +190,6 @@ header nav a:active {
 }
 
 .card_title {
-  font-size: 20px;
   text-align: center;
   padding: 0 10px;
 }
@@ -278,7 +276,6 @@ footer {
 
 .staff_cv {
   font-style: italic;
-  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -371,7 +368,6 @@ header .text_about {
 
 .sm_header_text_about {
   background: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
   line-height: 25px;
 }
 
@@ -414,7 +410,6 @@ body .header_tickets {
   justify-content: center;
   align-content: center;
   text-align: center;
-  font-size: 16px;
   height: 100%;
   padding: 10px;
 }
@@ -476,7 +471,6 @@ body .header_tickets {
   width: 100%;
   max-width: 300px;
   background: #ec5242;
-  font-size: 20px;
   border: none;
   cursor: pointer;
 }
@@ -503,6 +497,19 @@ body .header_tickets {
 .proceed:hover span::after {
   right: 0;
   opacity: 1;
+}
+
+.card_title,
+.staff_cv,
+.proceed {
+  font-size: 20px;
+}
+
+.location,
+.program_details,
+.sm_header_text_about,
+.tickets > div {
+  font-size: 16px;
 }
 
 @media (max-width: 500px) {
@@ -671,5 +678,9 @@ body .header_tickets {
     height: 150px;
     width: auto;
     margin: 20px;
+  }
+
+  .cards_container {
+    flex-wrap: nowrap;
   }
 }
