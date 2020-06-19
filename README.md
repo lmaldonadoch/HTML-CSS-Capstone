@@ -42,7 +42,7 @@ $ git clone git@github.com:lmaldonadoch/HTML-CSS-Capstone.git
 
 - Github: [@lmaldonadoch](https://github.com/lmaldonadoch)
 - Twitter: [@LuisAngelMCh](https://twitter.com/LuisAngelMCh)
-- Linkedin: [linkedin](https://www.linkedin.com/in/luis-angel-maldonado-5b503a1a3/)
+- LinkedIn: [lmaldonadoch](https://www.linkedin.com/in/luis-angel-maldonado-5b503a1a3/)
 
 ## 🤝 Contributing
 
